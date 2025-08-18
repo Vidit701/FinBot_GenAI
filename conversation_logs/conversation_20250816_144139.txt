@@ -1,0 +1,42 @@
+{
+  "timestamp": "20250816_144139",
+  "user_input": "what is the capital of Spain\\",
+  "bot_response": "The capital of Spain is Madrid. However, you asked me to analyze the provided transaction data, but I see that you provided a question about the capital of Spain, which is not relevant to the data. If you'd like to ask a question related to the transaction data, I'd be happy to help.",
+  "relevant_transactions": [
+    {
+      "transaction": "Starbucks Coffee",
+      "amount": 416.39,
+      "date": "2024-05-16",
+      "type": "Debit"
+    },
+    {
+      "transaction": "Starbucks Coffee",
+      "amount": 948.74,
+      "date": "2024-10-11",
+      "type": "Debit"
+    },
+    {
+      "transaction": "Starbucks Coffee",
+      "amount": 78.2,
+      "date": "2024-12-28",
+      "type": "Debit"
+    },
+    {
+      "transaction": "Starbucks Coffee",
+      "amount": 361.01,
+      "date": "2024-07-26",
+      "type": "Debit"
+    },
+    {
+      "transaction": "Starbucks Coffee",
+      "amount": 745.61,
+      "date": "2024-12-12",
+      "type": "Debit"
+    }
+  ],
+  "total_transactions": 5200,
+  "date_range": {
+    "start": "2024-01-01",
+    "end": "2025-02-04"
+  }
+}

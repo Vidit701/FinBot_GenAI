@@ -1,0 +1,12 @@
+pandas==2.2.2
+numpy==1.26.4
+pdfplumber
+openpyxl
+sentence-transformers
+faiss-cpu
+openai 
+langchain
+python-dotenv
+langchain_community 
+langchain-groq
+streamlit

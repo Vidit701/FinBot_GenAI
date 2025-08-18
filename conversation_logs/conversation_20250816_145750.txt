@@ -1,0 +1,32 @@
+User: tell me the total of starbucks transaction each month 
+
+Bot: To calculate the total of Starbucks transactions each month, I'll analyze the provided transaction data:
+
+1. January: No Starbucks transactions found in the provided data.
+2. February: No Starbucks transactions found in the provided data.
+3. March: No Starbucks transactions found in the provided data.
+4. April: No Starbucks transactions found in the provided data.
+5. May: £416.39
+6. June: No Starbucks transactions found in the provided data.
+7. July: £361.01
+8. August: No Starbucks transactions found in the provided data.
+9. September: No Starbucks transactions found in the provided data.
+10. October: £948.74
+11. November: No Starbucks transactions found in the provided data.
+12. December: £78.20 + £745.61 = £823.81
+
+Please note that these calculations are based on the provided Starbucks transaction data and might not reflect the complete picture of all Starbucks transactions in the database.
+
+Here are the total Starbucks transactions for each month:
+
+- May: £416.39
+- July: £361.01
+- October: £948.74
+- December: £823.81
+
+Relevant Transactions:
+- Starbucks Coffee (£416.39)
+- Starbucks Coffee (£948.74)
+- Starbucks Coffee (£78.20)
+- Starbucks Coffee (£361.01)
+- Starbucks Coffee (£745.61)

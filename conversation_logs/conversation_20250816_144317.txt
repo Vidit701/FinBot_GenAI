@@ -1,0 +1,42 @@
+{
+  "timestamp": "20250816_144317",
+  "user_input": "what is the capital of Spain?",
+  "bot_response": "I'm a financial assistant, and I don't have information on geography or general knowledge outside of financial analysis. However, I can suggest some ways for you to find the answer:\n\n1. You can check a reliable online source such as Wikipedia or a world atlas.\n2. You can ask a voice assistant like Siri, Google Assistant, or Alexa.\n3. You can check a map or a travel guidebook.\n\nIf you have any financial-related questions or need help with analyzing transactions, I'd be happy to assist you!",
+  "relevant_transactions": [
+    {
+      "transaction": "Starbucks Coffee",
+      "amount": 416.39,
+      "date": "2024-05-16",
+      "type": "Debit"
+    },
+    {
+      "transaction": "Starbucks Coffee",
+      "amount": 948.74,
+      "date": "2024-10-11",
+      "type": "Debit"
+    },
+    {
+      "transaction": "Starbucks Coffee",
+      "amount": 78.2,
+      "date": "2024-12-28",
+      "type": "Debit"
+    },
+    {
+      "transaction": "Starbucks Coffee",
+      "amount": 361.01,
+      "date": "2024-07-26",
+      "type": "Debit"
+    },
+    {
+      "transaction": "Starbucks Coffee",
+      "amount": 745.61,
+      "date": "2024-12-12",
+      "type": "Debit"
+    }
+  ],
+  "total_transactions": 5200,
+  "date_range": {
+    "start": "2024-01-01",
+    "end": "2025-02-04"
+  }
+}

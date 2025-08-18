@@ -1,0 +1,36 @@
+User: tell me the total of starbucks transaction each month  for the year 2024
+
+Bot: Based on the provided transaction data, I found the following Starbucks transactions for 2024:
+
+1. May 2024: £416.39
+2. July 2024: £361.01
+3. October 2024: £948.74
+4. December 2024: £745.61 + £78.20 = £823.81
+
+There's also another transaction in December 2024 mentioned in the initial list but it seems incorrect as it's mentioned after the correct one.
+
+To calculate the total for each month in 2024 (excluding the mentioned transactions as the correct ones), we'll need to consider the entire database for 2024, which may contain more Starbucks transactions.
+
+However, based on the provided transaction data, here are the total Starbucks transactions for each month in 2024:
+
+1. January 2024: Not found in the provided data
+2. February 2024: Not found in the provided data
+3. March 2024: Not found in the provided data
+4. April 2024: Not found in the provided data
+5. May 2024: £416.39
+6. June 2024: Not found in the provided data
+7. July 2024: £361.01
+8. August 2024: Not found in the provided data
+9. September 2024: Not found in the provided data
+10. October 2024: £948.74
+11. November 2024: Not found in the provided data
+12. December 2024: £823.81
+
+Please note that these results are based on the provided transaction data, and there might be more transactions in the entire database for 2024.
+
+Relevant Transactions:
+- Starbucks Coffee (£416.39)
+- Starbucks Coffee (£948.74)
+- Starbucks Coffee (£78.20)
+- Starbucks Coffee (£361.01)
+- Starbucks Coffee (£745.61)

@@ -1,1 +1,1 @@
-# FinBot_GenAI
+# finbot

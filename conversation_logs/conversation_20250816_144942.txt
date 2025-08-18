@@ -1,0 +1,10 @@
+User: what is the capital of Spain?
+
+Bot: That's a geography question, not related to the transaction data. The capital of Spain is Madrid.
+
+Relevant Transactions:
+- Starbucks Coffee (£416.39)
+- Starbucks Coffee (£948.74)
+- Starbucks Coffee (£78.20)
+- Starbucks Coffee (£361.01)
+- Starbucks Coffee (£745.61)

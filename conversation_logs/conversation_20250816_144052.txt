@@ -1,0 +1,42 @@
+{
+  "timestamp": "20250816_144052",
+  "user_input": "give me the summary of the transavtions for each month ",
+  "bot_response": "Based on the provided transaction data, here's a summary of the transactions for each month:\n\n1. **January 2024**: No transactions available in the provided data.\n2. **February 2024**: No transactions available in the provided data.\n3. **March 2024**: No transactions available in the provided data.\n4. **April 2024**: No transactions available in the provided data.\n5. **May 2024**: No transactions available in the provided data.\n6. **June 2024**: No transactions available in the provided data.\n7. **July 2024**: No transactions available in the provided data.\n8. **August 2024**: No transactions available in the provided data.\n9. **September 2024**: \n    - 'Salary Payment on 2024-09-10 00:00:00 for \u00a31730.19 (Credit)'.\n10. **October 2024**: No transactions available in the provided data.\n11. **November 2024**: \n    - 'Salary Payment on 2024-11-15 00:00:00 for \u00a3828.61 (Credit)'.\n12. **December 2024**: No transactions available in the provided data.\n13. **January 2025**: No transactions available in the provided data.\n14. **February 2025**: \n    - No transactions available in the provided data. However, we do have a salary payment for 2025-01-02, which is at the start of the month.\n\nBased on the provided data, here's a table summarizing the transactions by month:\n\n| Month | Number of Transactions | Total Amount | Salary Payment |\n| --- | --- | --- | --- |\n| Jan 2024 | 0 | \u00a30 | - |\n| Feb 2024 | 0 | \u00a30 | - |\n| Mar 2024 | 0 | \u00a30 | - |\n| Apr 2024 | 0 | \u00a30 | - |\n| May 2024 | 0 | \u00a30 | \u00a31726.45 |\n| Jun 2024 | 0 | \u00a30 | - |\n| Jul 2024 | 0 | \u00a30 | - |\n| Aug 2024 | 0 | \u00a30 | - |\n| Sep 2024 | 1 | \u00a31730.19 | \u00a31730.19 |\n| Oct 2024 | 0 | \u00a30 | - |\n| Nov 2024 | 1 | \u00a3828.61 | \u00a3828.61 |\n| Dec 2024 | 0 | \u00a30 | - |\n| Jan 2025 | 0 | \u00a30 | \u00a31834.07 |\n| Feb 2025 | 0 | \u00a30 | - |\n\nNote: The 'Total Amount' is not provided in the table as the available data only contains salary payments.",
+  "relevant_transactions": [
+    {
+      "transaction": "Salary Payment",
+      "amount": 828.61,
+      "date": "2024-11-15",
+      "type": "Credit"
+    },
+    {
+      "transaction": "Salary Payment",
+      "amount": 1730.19,
+      "date": "2024-09-10",
+      "type": "Credit"
+    },
+    {
+      "transaction": "Salary Payment",
+      "amount": 1726.45,
+      "date": "2024-05-22",
+      "type": "Credit"
+    },
+    {
+      "transaction": "Salary Payment",
+      "amount": 721.08,
+      "date": "2024-03-24",
+      "type": "Credit"
+    },
+    {
+      "transaction": "Salary Payment",
+      "amount": 1834.07,
+      "date": "2025-01-02",
+      "type": "Credit"
+    }
+  ],
+  "total_transactions": 5200,
+  "date_range": {
+    "start": "2024-01-01",
+    "end": "2025-02-04"
+  }
+}
