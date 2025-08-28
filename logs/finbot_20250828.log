@@ -1,0 +1,172 @@
+2025-08-28 14:33:05,671 - FinBot - INFO - Initializing FinBot...
+2025-08-28 14:33:06,008 - FinBot - INFO - Loaded 5200 transactions
+2025-08-28 14:33:06,024 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-08-28 14:33:06,024 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-08-28 14:33:08,328 - FinBot - INFO - Embedding model loaded
+2025-08-28 14:33:08,339 - FinBot - INFO - Loading existing embeddings and index...
+2025-08-28 14:33:08,363 - FinBot - INFO - Existing embeddings and index loaded successfully
+2025-08-28 14:35:32,394 - FinBot - INFO - Initializing FinBot...
+2025-08-28 14:35:33,210 - FinBot - INFO - Loaded 5200 transactions
+2025-08-28 14:35:33,215 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-08-28 14:35:33,215 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-08-28 14:35:34,866 - FinBot - INFO - Embedding model loaded
+2025-08-28 14:35:34,868 - FinBot - INFO - Loading existing embeddings and index...
+2025-08-28 14:35:34,881 - FinBot - INFO - Existing embeddings and index loaded successfully
+2025-08-28 14:35:51,087 - FinBot - INFO - Processing query: give me the summary of the transavtions for each month 
+2025-08-28 14:35:51,467 - groq._base_client - INFO - Retrying request to /openai/v1/chat/completions in 0.469697 seconds
+2025-08-28 14:35:51,983 - groq._base_client - INFO - Retrying request to /openai/v1/chat/completions in 0.881572 seconds
+2025-08-28 14:35:52,893 - FinBot - ERROR - Query processing error: Connection error.
+Traceback (most recent call last):
+  File "C:\Users\sheth\Desktop\FinBot\.venv\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\sheth\Desktop\FinBot\.venv\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sheth\Desktop\FinBot\.venv\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\sheth\Desktop\FinBot\.venv\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sheth\Desktop\FinBot\.venv\Lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sheth\Desktop\FinBot\.venv\Lib\site-packages\httpcore\_sync\http11.py", line 136, in handle_request
+    raise exc
+  File "C:\Users\sheth\Desktop\FinBot\.venv\Lib\site-packages\httpcore\_sync\http11.py", line 86, in handle_request
+    self._send_request_headers(**kwargs)
+  File "C:\Users\sheth\Desktop\FinBot\.venv\Lib\site-packages\httpcore\_sync\http11.py", line 144, in _send_request_headers
+    with map_exceptions({h11.LocalProtocolError: LocalProtocolError}):
+  File "C:\Users\sheth\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 155, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\sheth\Desktop\FinBot\.venv\Lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.LocalProtocolError: Illegal header value b'Bearer '
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sheth\Desktop\FinBot\.venv\Lib\site-packages\groq\_base_client.py", line 980, in request
+    response = self._client.send(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sheth\Desktop\FinBot\.venv\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sheth\Desktop\FinBot\.venv\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sheth\Desktop\FinBot\.venv\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sheth\Desktop\FinBot\.venv\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sheth\Desktop\FinBot\.venv\Lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+  File "C:\Users\sheth\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 155, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\sheth\Desktop\FinBot\.venv\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.LocalProtocolError: Illegal header value b'Bearer '
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sheth\Desktop\FinBot\FinBot_GenAI\src\app.py", line 162, in process_query
+    response = self.llm.generate([messages])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sheth\Desktop\FinBot\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 825, in generate
+    self._generate_with_cache(
+  File "C:\Users\sheth\Desktop\FinBot\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1072, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\sheth\Desktop\FinBot\.venv\Lib\site-packages\langchain_groq\chat_models.py", line 527, in _generate
+    response = self.client.create(messages=message_dicts, **params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sheth\Desktop\FinBot\.venv\Lib\site-packages\groq\resources\chat\completions.py", line 378, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\sheth\Desktop\FinBot\.venv\Lib\site-packages\groq\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sheth\Desktop\FinBot\.venv\Lib\site-packages\groq\_base_client.py", line 1012, in request
+    raise APIConnectionError(request=request) from err
+groq.APIConnectionError: Connection error.
+2025-08-28 14:35:52,909 - FinBot - ERROR - UI error: Connection error.
+Traceback (most recent call last):
+  File "C:\Users\sheth\Desktop\FinBot\.venv\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\sheth\Desktop\FinBot\.venv\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sheth\Desktop\FinBot\.venv\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\sheth\Desktop\FinBot\.venv\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sheth\Desktop\FinBot\.venv\Lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sheth\Desktop\FinBot\.venv\Lib\site-packages\httpcore\_sync\http11.py", line 136, in handle_request
+    raise exc
+  File "C:\Users\sheth\Desktop\FinBot\.venv\Lib\site-packages\httpcore\_sync\http11.py", line 86, in handle_request
+    self._send_request_headers(**kwargs)
+  File "C:\Users\sheth\Desktop\FinBot\.venv\Lib\site-packages\httpcore\_sync\http11.py", line 144, in _send_request_headers
+    with map_exceptions({h11.LocalProtocolError: LocalProtocolError}):
+  File "C:\Users\sheth\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 155, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\sheth\Desktop\FinBot\.venv\Lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.LocalProtocolError: Illegal header value b'Bearer '
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sheth\Desktop\FinBot\.venv\Lib\site-packages\groq\_base_client.py", line 980, in request
+    response = self._client.send(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sheth\Desktop\FinBot\.venv\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sheth\Desktop\FinBot\.venv\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sheth\Desktop\FinBot\.venv\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sheth\Desktop\FinBot\.venv\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sheth\Desktop\FinBot\.venv\Lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+  File "C:\Users\sheth\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 155, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\sheth\Desktop\FinBot\.venv\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.LocalProtocolError: Illegal header value b'Bearer '
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sheth\Desktop\FinBot\FinBot_GenAI\src\app.py", line 203, in <module>
+    bot_response = st.session_state.finbot.process_query(user_input)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sheth\Desktop\FinBot\FinBot_GenAI\src\app.py", line 162, in process_query
+    response = self.llm.generate([messages])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sheth\Desktop\FinBot\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 825, in generate
+    self._generate_with_cache(
+  File "C:\Users\sheth\Desktop\FinBot\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1072, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\sheth\Desktop\FinBot\.venv\Lib\site-packages\langchain_groq\chat_models.py", line 527, in _generate
+    response = self.client.create(messages=message_dicts, **params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sheth\Desktop\FinBot\.venv\Lib\site-packages\groq\resources\chat\completions.py", line 378, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\sheth\Desktop\FinBot\.venv\Lib\site-packages\groq\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sheth\Desktop\FinBot\.venv\Lib\site-packages\groq\_base_client.py", line 1012, in request
+    raise APIConnectionError(request=request) from err
+groq.APIConnectionError: Connection error.
