@@ -1,11 +1,11 @@
-# 💰 FinBot – AI-Powered Financial Assistant
+# FinBot – AI-Powered Financial Assistant
 
 FinBot is an AI-driven financial assistant that helps you **analyze, query, and understand your personal banking transactions**.  
 It combines **semantic search**, **FAISS indexing**, and **LLM-powered natural language understanding** to provide clear, contextual answers about your spending patterns.
 
 ---
 
-## 🚀 Features
+## Features
 
 - **Interactive Chat UI** built with [Streamlit](https://streamlit.io/)  
 - **Natural Language Queries**: Ask questions like  
@@ -21,7 +21,7 @@ It combines **semantic search**, **FAISS indexing**, and **LLM-powered natural l
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 FinBot_GenAI/
 ├── app.py # Main Streamlit app
@@ -35,7 +35,7 @@ FinBot_GenAI/
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 1. **Clone the repository**  
    ```bash
